@@ -1,0 +1,35 @@
+# Rust build artifacts
+/target/
+
+# Dependency lock files for libraries
+Cargo.lock
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+*.key
+*.pem
+
+# Logs
+*.log
+
+# Node.js dependencies (if using JavaScript for tools or frontend)
+/node_modules/
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.old
+
+# Generated files
+/docs/html/
+*.rs.bk

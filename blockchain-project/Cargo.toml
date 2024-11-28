@@ -1,0 +1,30 @@
+[package]
+name = "blockchain-project"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Networking
+libp2p = "0.51.0"            # Peer-to-peer networking library
+
+# Cryptography
+sodiumoxide = "0.2.6"        # Libsodium bindings for Rust
+# Or use Ring as an alternative cryptographic library
+# ring = "0.16.20"
+
+# Testing and Benchmarking
+criterion = "0.4"            # Performance benchmarking
+rand = "0.8"                 # Random number generation for testing
+
+# Utilities
+serde = { version = "1.0", features = ["derive"] }  # Serialization/deserialization
+serde_json = "1.0"           # JSON parsing for configs or testing
+dotenv = "0.15"              # Manage environment variables
+
+# Storage (for prototyping)
+sled = "0.34"                # Key-value storage (can be replaced with a custom ledger later)
+
+# Logging
+log = "0.4"                  # Logging API
+env_logger = "0.10"          # Logging configuration from environment variables
+
