@@ -6,8 +6,6 @@ pub mod block;
 pub mod contract; // Add the contract module
 
 pub use transaction::{Transaction, TransactionType};
-pub use streams::Stream;
-pub use state::StateManager;
 pub use block::Block;
 pub use contract::SmartContract;
 
